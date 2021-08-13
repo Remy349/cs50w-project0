@@ -1,0 +1,141 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Nunito:wght@200;400&display=swap');
+
+$header-height: 3rem;
+
+$body-color: #20202c;
+$second-color: #191924;
+$white: #fff;
+
+$first-font: 'Istok Web', sans-serif;
+$second-font: 'Nunito', sans-serif;
+
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+$biggest-font-size: 2.5rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+
+@media screen and (min-width: 968px) {
+    $biggest-font-size: 4rem;
+    $h1-font-size: 2.25rem;
+    $h2-font-size: 1.75rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $body-color;
+    margin: $header-height 0 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 968px;
+}
+
+.header {
+    background-color: $second-color;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    font-family: $first-font;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo,
+    &__toggle {
+        color: $white;
+    }
+
+    &__logo {
+        font-weight: $font-semi-bold;
+    }
+
+    &__toggle {
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    &__menu {
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            box-shadow: -1px 0 4px;
+            padding: 3rem;
+            transition: .4s;
+            background-color: $body-color;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    &__link {
+        color: $white;
+        font-weight: $font-semi-bold;
+        text-transform: uppercase;
+    }
+
+    &__close {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.show-menu {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
