@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Nunito:wght@200;400&display=swap');
 
+/* VARIABLES */
 $header-height: 3rem;
 
 $body-color: #20202c;
@@ -33,6 +34,7 @@ $smaller-font-size: .75rem;
     $smaller-font-size: .813rem;
 }
 
+/* BASE */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,10 +54,19 @@ a {
     text-decoration: none;
 }
 
+.section {
+    padding: 4.5rem 0 2.5rem;
+}
+
 .container {
     margin-left: 1rem;
     margin-right: 1rem;
     max-width: 968px;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
 }
 
 .header {
@@ -66,6 +77,8 @@ a {
     left: 0;
     z-index: 100;
 }
+
+/* NAV */
 
 .nav {
     font-family: $first-font;
@@ -130,12 +143,28 @@ a {
     right: 0;
 }
 
+/* HOME PAGE */
 
+.home {
+    &__container {
 
+    }
 
+    &__data-subtitle,
+    &__data-title,
+    &__data-description {
+        color: $white;
+    }
+}
 
+/* FOOTER */
+.footer {
+    &__container {
+        row-gap: 5rem;
+    }
 
-
-
-
-
+    &__content {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+    }
+}
