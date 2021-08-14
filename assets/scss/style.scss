@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Nunito:wght@200;400&display=swap');
 
 /* VARIABLES */
+
 $header-height: 3rem;
 
 $body-color: #20202c;
@@ -34,7 +35,14 @@ $smaller-font-size: .75rem;
     $smaller-font-size: .813rem;
 }
 
+/* MIXIN */
+
+@mixin transition-ease {
+    transition: all .4s ease-in-out;
+}
+
 /* BASE */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -146,19 +154,13 @@ a {
 /* HOME PAGE */
 
 .home {
-    &__container {
-
-    }
-
-    &__data-subtitle,
-    &__data-title,
-    &__data-description {
-        color: $white;
-    }
+    color: $white;
 }
 
 /* FOOTER */
 .footer {
+    color: $white;
+
     &__container {
         row-gap: 5rem;
     }
@@ -166,5 +168,40 @@ a {
     &__content {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         row-gap: 2rem;
+    }
+
+    &__title {
+        font-size: $h3-font-size;
+        margin-bottom: .5rem;
+    }
+
+    &__description {
+        margin-bottom: 2rem;
+    }
+
+    &__social {
+        font-size: 1.25rem;
+        color: $white;
+        margin-right: 1.25rem;
+    }
+
+    &__item {
+        margin-bottom: .75rem;
+    }
+
+    &__link {
+        color: $white;
+    }
+
+    &__rights {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        text-align: center;
+    }
+
+    &__copy {
+        font-size: $small-font-size;
+        color: $white;
     }
 }
