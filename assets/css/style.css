@@ -106,11 +106,45 @@ a {
 /* HOME PAGE */
 .home {
   color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+.home__data {
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.home__data-title {
+  font-size: 2.3rem;
+}
+.home__data-subtitle {
+  font-size: 1.2rem;
+}
+.home__data-description {
+  font-size: 1.5rem;
+}
+.home__data-more {
+  margin-top: 1.7rem;
+}
+.home__data-button {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+.home__data-icon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
 }
 
 /* FOOTER */
 .footer {
   color: #fff;
+  font-family: "Nunito", sans-serif;
 }
 .footer__container {
   row-gap: 5rem;

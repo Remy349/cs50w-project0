@@ -155,11 +155,52 @@ a {
 
 .home {
     color: $white;
+    font-family: $second-font;
+
+    &__data { 
+        text-align: center;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+
+        &-title {
+            font-size: 2.3rem;
+        }
+
+        &-subtitle {
+            font-size: 1.2rem;
+        }
+
+        &-description {
+            font-size: 1.5rem;
+        }
+
+        &-more {
+            margin-top: 1.7rem;
+        }
+
+        &-button {
+            padding: 1rem 1.5rem;
+            background-color: $white;
+            border-radius: .5rem;
+            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            font-weight: $font-semi-bold;
+        }
+
+        &-icon {
+            font-size: 1.25rem;
+            margin-left: .5rem;
+        }
+    }
 }
 
 /* FOOTER */
 .footer {
     color: $white;
+    font-family: $second-font;
 
     &__container {
         row-gap: 5rem;
