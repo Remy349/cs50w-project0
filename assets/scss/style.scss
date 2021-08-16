@@ -52,6 +52,7 @@ $smaller-font-size: .75rem;
 body {
     background-color: $body-color;
     margin: $header-height 0 0 0;
+    font-family: $second-font;
 }
 
 ul {
@@ -75,6 +76,15 @@ a {
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+
+.button {
+    background-color: $white;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    font-weight: $font-semi-bold;
 }
 
 .header {
@@ -160,6 +170,7 @@ a {
     &__data { 
         text-align: center;
         margin-top: 5rem;
+        margin-bottom: 4rem;
         display: flex;
         flex-direction: column;
         row-gap: .5rem;
@@ -181,13 +192,8 @@ a {
         }
 
         &-button {
-            padding: 1rem 1.5rem;
-            background-color: $white;
-            border-radius: .5rem;
-            font-size: 1.2rem;
-            display: inline-flex;
-            align-items: center;
-            font-weight: $font-semi-bold;
+            @extend .button;
+            padding: .5rem 1.5rem;
         }
 
         &-icon {
@@ -197,7 +203,12 @@ a {
     }
 }
 
+/* TYPES */
+
+@import './types';
+
 /* FOOTER */
+
 .footer {
     color: $white;
     font-family: $second-font;

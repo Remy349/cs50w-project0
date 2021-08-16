@@ -12,6 +12,7 @@
 body {
   background-color: #20202c;
   margin: 3rem 0 0 0;
+  font-family: "Nunito", sans-serif;
 }
 
 ul {
@@ -35,6 +36,15 @@ a {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+.button, .types__data-button, .types__content-card-button, .home__data-button {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
 }
 
 .header {
@@ -111,6 +121,7 @@ a {
 .home__data {
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
@@ -128,17 +139,88 @@ a {
   margin-top: 1.7rem;
 }
 .home__data-button {
-  padding: 1rem 1.5rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  display: inline-flex;
-  align-items: center;
-  font-weight: 600;
+  padding: 0.5rem 1.5rem;
 }
 .home__data-icon {
   font-size: 1.25rem;
   margin-left: 0.5rem;
+}
+
+/* TYPES */
+.types {
+  color: #fff;
+}
+.types__content {
+  margin-top: 4rem;
+}
+.types__content-title, .types__content-desc {
+  text-align: center;
+}
+.types__content-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.types__content-desc {
+  font-size: 1.1rem;
+}
+.types__content-cards {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+.types__content-card {
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 #191924;
+  transition: all 0.4s ease-in-out;
+}
+.types__content-card-img {
+  width: 100%;
+}
+.types__content-card:hover {
+  box-shadow: 0 14px 26px 0 #191924;
+}
+.types__content-card-container {
+  padding: 2px 16px;
+  text-align: center;
+}
+.types__content-card-button {
+  padding: 4px 8px;
+  margin-top: 10px;
+}
+.types__content-card-title {
+  font-size: 1.25rem;
+}
+.types__content-icon {
+  margin-left: 8px;
+}
+.types__data {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.types__data-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 6rem;
+}
+.types__data-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.types__data-description {
+  font-size: 0.938rem;
+}
+.types__data-link {
+  margin-top: 1.8rem;
+}
+.types__data-button {
+  padding: 5px 10px;
+}
+.types__data-icon {
+  margin-left: 8px;
+  font-size: 1.5rem;
 }
 
 /* FOOTER */

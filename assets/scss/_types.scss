@@ -1,0 +1,97 @@
+.types {
+    color: $white;
+
+    &__content {
+        margin-top: 4rem;
+
+        &-title,
+        &-desc {
+            text-align: center;
+        }
+
+        &-title {
+            margin-bottom: 1rem;
+            font-size: $h1-font-size;
+        }
+
+        &-desc {
+            font-size: 1.1rem;
+        }
+
+        &-cards {
+            display: grid;
+            grid-row-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 1rem;
+        }
+
+        &-card {
+            width: 90%;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 $second-color;
+            @include transition-ease;
+
+            &-img {
+                width: 100%;
+            }
+
+            &:hover {
+                box-shadow: 0 14px 26px 0 $second-color;
+            }
+
+            &-container {
+                padding: 2px 16px;
+                text-align: center;
+            }
+
+            &-button {
+                @extend .button;
+                padding: 4px 8px;
+                margin-top: 10px;
+            }
+
+            &-title {
+                font-size: $h2-font-size;
+            }
+        }
+
+        &-icon {
+            margin-left: 8px;
+        }
+    }
+
+    &__data {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+
+        &-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 6rem;
+        }
+
+        &-title {
+            font-size: $h1-font-size;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        &-description {
+            font-size: $normal-font-size;
+        }
+
+        &-link {
+            margin-top: 1.8rem;
+        }
+
+        &-button {
+            @extend .button;
+            padding: 5px 10px;
+        }
+
+        &-icon {
+            margin-left: 8px;
+            font-size: 1.5rem;
+        }
+    }
+}
