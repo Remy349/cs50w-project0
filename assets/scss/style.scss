@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Nunito:wght@200;400&display=swap');
 
 /* VARIABLES */
-
 $header-height: 3rem;
 
 $body-color: #20202c;
@@ -36,13 +35,11 @@ $smaller-font-size: .75rem;
 }
 
 /* MIXIN */
-
 @mixin transition-ease {
     transition: all .4s ease-in-out;
 }
 
 /* BASE */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -87,6 +84,7 @@ a {
     font-weight: $font-semi-bold;
 }
 
+/* HEADER */
 .header {
     background-color: $second-color;
     width: 100%;
@@ -97,7 +95,6 @@ a {
 }
 
 /* NAV */
-
 .nav {
     font-family: $first-font;
     height: $header-height;
@@ -162,7 +159,6 @@ a {
 }
 
 /* HOME PAGE */
-
 .home {
     color: $white;
     font-family: $second-font;
@@ -176,7 +172,7 @@ a {
         row-gap: .5rem;
 
         &-title {
-            font-size: 2.3rem;
+            font-size: $biggest-font-size;
         }
 
         &-subtitle {
@@ -203,12 +199,16 @@ a {
     }
 }
 
-/* TYPES */
+/* ABOUT */
+@import './about';
 
+/* TYPES */
 @import './types';
 
-/* FOOTER */
+/* PRICES */
+@import './prices';
 
+/* FOOTER */
 .footer {
     color: $white;
     font-family: $second-font;

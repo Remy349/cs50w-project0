@@ -47,6 +47,7 @@ a {
   font-weight: 600;
 }
 
+/* HEADER */
 .header {
   background-color: #191924;
   width: 100%;
@@ -127,7 +128,7 @@ a {
   row-gap: 0.5rem;
 }
 .home__data-title {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 .home__data-subtitle {
   font-size: 1.2rem;
@@ -144,6 +145,23 @@ a {
 .home__data-icon {
   font-size: 1.25rem;
   margin-left: 0.5rem;
+}
+
+/* ABOUT */
+.about {
+  color: #fff;
+}
+.about__data {
+  margin-bottom: 4rem;
+  margin-top: 3.5rem;
+}
+.about__data-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.about__data-description {
+  font-size: 0.938rem;
 }
 
 /* TYPES */
@@ -221,6 +239,45 @@ a {
 .types__data-icon {
   margin-left: 8px;
   font-size: 1.5rem;
+}
+
+/* PRICES */
+.prices {
+  color: #fff;
+}
+.prices__data-title, .prices__data-subtitle {
+  text-align: center;
+}
+.prices__data-title {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.prices__data-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+}
+.prices__data-description {
+  font-size: 0.938rem;
+  margin-bottom: 1.5rem;
+}
+.prices__table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+.prices__table-info table, .prices__table-info td, .prices__table-info th {
+  border: 1px solid #fff;
+}
+.prices__table-info table {
+  width: 100%;
+}
+.prices__table-info td, .prices__table-info th {
+  padding: 5px;
+}
+.prices__table-info th {
+  font-size: 1.25rem;
 }
 
 /* FOOTER */

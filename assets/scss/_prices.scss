@@ -1,0 +1,53 @@
+.prices {
+    color: $white;
+
+    &__data {
+
+        &-title,
+        &-subtitle {
+            text-align: center;
+        }
+
+        &-title {
+            margin-top: 4rem;
+            font-size: $h1-font-size;
+            margin-bottom: .5rem;
+        }
+
+        &-subtitle {
+            font-size: $h2-font-size;
+            margin-bottom: 1.2rem;
+        }
+
+        &-description {
+            font-size: $normal-font-size;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__table {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 2.5rem;
+        margin-bottom: 4rem;
+
+        &-info {
+
+            table, td, th {
+                border: 1px solid $white;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            td, th {
+                padding: 5px;
+            }
+
+            th {
+                font-size: $h2-font-size;
+            }
+        }
+    }
+}
