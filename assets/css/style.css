@@ -321,4 +321,117 @@ a {
   color: #fff;
 }
 
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .nav {
+    height: calc($header-height + 1.5rem);
+  }
+  .nav__link {
+    text-transform: initial;
+  }
+  .nav__menu {
+    display: flex;
+    column-gap: 1rem;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+  .nav__toggle, .nav__close {
+    display: none;
+  }
+
+  .section {
+    padding: 7rem 0 2rem;
+  }
+
+  /* HOME */
+  .home__container {
+    height: 100vh;
+  }
+  .home__data {
+    margin-top: 10rem;
+  }
+  .home__data-subtitle {
+    font-size: 1.3rem;
+  }
+
+  /* ABOUT */
+  .about__data {
+    padding: 0 4rem 0 4rem;
+    margin-top: 7rem;
+  }
+  .about__data-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+  .about__data-description {
+    font-size: 1rem;
+  }
+
+  /* TYPES */
+  .types__content {
+    margin-top: 7rem;
+    padding: 0 4rem 0 4rem;
+  }
+  .types__content-title {
+    font-size: 1.7rem;
+  }
+  .types__content-desc {
+    font-size: 1.3rem;
+    margin-bottom: 1.8rem;
+  }
+  .types__content-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .types__data {
+    padding: 0 4rem 0 4rem;
+  }
+  .types__data-title {
+    font-size: 1.7rem;
+  }
+  .types__data-description {
+    font-size: 1rem;
+  }
+
+  /* PRICES */
+  .prices__data {
+    margin-top: 7rem;
+    padding: 0 4rem 0 4rem;
+  }
+  .prices__data-title {
+    margin-top: 0;
+    font-size: 1.7rem;
+  }
+  .prices__data-subtitle {
+    font-size: 1.3rem;
+  }
+  .prices__data-description {
+    font-size: 1rem;
+  }
+  .prices__table {
+    padding: 0 4rem 0 4rem;
+  }
+
+  /* FOOTER */
+  .footer__rights {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

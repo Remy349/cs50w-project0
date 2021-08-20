@@ -257,3 +257,160 @@ a {
         color: $white;
     }
 }
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .nav {
+        height: calc($header-height + 1.5rem);
+
+        &__link {
+            text-transform: initial;
+        }
+
+        &__menu {
+            display: flex;
+            column-gap: 1rem;
+        }
+
+        &__list {
+            flex-direction: row;
+            column-gap: 4rem;
+        }
+
+        &__toggle,
+        &__close {
+            display: none;
+        }
+    }
+
+    .section {
+        padding: 7rem 0 2rem;
+    }
+
+    /* HOME */
+    .home {
+        &__container {
+            height: 100vh;
+        }
+
+        &__data {
+            margin-top: 10rem;
+
+            &-subtitle {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    /* ABOUT */
+    .about {
+        &__data {
+            padding: 0 4rem 0 4rem;
+            margin-top: 7rem;
+
+            &-title {
+                font-size: 1.7rem;
+                margin-bottom: 1.7rem;
+            }
+
+            &-description {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* TYPES */
+    .types {
+        &__content {
+            margin-top: 7rem;
+            padding: 0 4rem 0 4rem;
+
+            &-title {
+                font-size: 1.7rem;
+            }
+
+            &-desc {
+                font-size: 1.3rem;
+                margin-bottom: 1.8rem;
+            }
+
+            &-cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        &__data {
+            padding: 0 4rem 0 4rem;
+
+            &-title {
+                font-size: 1.7rem;
+            }
+
+            &-description {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    /* PRICES */
+    .prices {
+        &__data {
+            margin-top: 7rem;
+            padding: 0 4rem 0 4rem;
+
+            &-title {
+                margin-top: 0;
+                font-size: 1.7rem;
+            }
+
+            &-subtitle {
+                font-size: 1.3rem;
+            }
+
+            &-description {
+                font-size: 1rem;
+            }
+        }
+
+        &__table {
+            padding: 0 4rem 0 4rem;
+        }
+    }
+
+    /* FOOTER */
+    .footer {
+        &__rights {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
